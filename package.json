@@ -1,0 +1,27 @@
+{
+  "name": "app-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "The app manager section of the Deriv Experiments site, which allows you to manage your api apps.",
+  "main": "index.js",
+  "scripts": {
+    "start": "servatron --bind localhost -p 8003 -d dist & npm run watch",
+    "build": "node build.js",
+    "watch": "node build.js --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@deriv-experiments/react": "^0.0.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar": "^3.5.3",
+    "debounce": "^1.2.1",
+    "esbuild": "^0.17.17",
+    "servatron": "^2.4.3"
+  }
+}
